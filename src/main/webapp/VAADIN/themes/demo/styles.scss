@@ -1,0 +1,17 @@
+$al-bar-height: 70px;
+$al-bar-background-color: rgb(255, 255, 255);
+$al-bar-font-color: rgb(0, 100, 120);
+$al-drawer-width: 250px;
+$al-drawer-small-width: 70px;
+$al-drawer-submenu-indention: 10px;
+$al-drawer-submenu-background-color: transparent;
+
+@import "../valo/valo.scss";
+// don't do it this way in production or development, instead run an 'mvn install' if you haven't already and check your
+// addons.scss in your theme it should contain automatically an import of the theme
+@import "../../addons/app-layout/app-layout.scss";
+
+.demo {
+  @include valo;
+  @include app-layout;
+}
